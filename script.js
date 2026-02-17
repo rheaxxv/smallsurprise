@@ -91,28 +91,12 @@ function handleNoClick() {
     const msgIndex = Math.min(noClickCount, noMessages.length - 1)
     noBtn.textContent = noMessages[msgIndex]
 
-    // Grow the Yes button bigger each time (mobile-safe)
-    const currentSize = parseFloat(getComputedStyle(yesBtn).fontSize)
-
-    // cap the max size so it doesn't blow up the layout on phones
-    const maxYesSize = window.matchMedia('(max-width: 420px)').matches ? 38 : 120
-    yesBtn.style.fontSize = `${Math.min(currentSize * 1.25, maxYesSize)}px`
-
-    // cap padding too
-    const maxPadY = window.matchMedia('(max-width: 420px)').matches ? 26 : 60
-    const maxPadX = window.matchMedia('(max-width: 420px)').matches ? 70 : 120
-    
-    const padY = Math.min(14 + noClickCount * 3, maxPadY)
-    const padX = Math.min(26 + noClickCount * 6, maxPadX)
+    // Grow the Yes button bigger each time
+    const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
+    yesBtn.style.fontSize = `${currentSize * 1.35}px`
+    const padY = Math.min(18 + noClickCount * 5, 60)
+    const padX = Math.min(45 + noClickCount * 10, 120)
     yesBtn.style.padding = `${padY}px ${padX}px`
-
-    // Shrink No button to contrast (but don't make it tiny)
-    if (noClickCount >= 5) {
-      const noSize = parseFloat(getComputedStyle(noBtn).fontSize)
-      const minNoSize = window.matchMedia('(max-width: 420px)').matches ? 12 : 10
-      noBtn.style.fontSize = `${Math.max(noSize * 0.9, minNoSize)}px`
-
-}
 
     // Shrink No button to contrast
     if (noClickCount >= 2) {
@@ -125,7 +109,7 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5
-    if (noClickCount >= 3 && !runawayEnabled) {
+    if (noClickCount >= 5 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
     }
