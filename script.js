@@ -1,12 +1,12 @@
 const gifStages = [
-    "https://media.tenor.com/SFy5Za0DyMEAAAAj/erm-fingers.gif",    // 0 normal
-    "https://media.tenor.com/OlpOTuNjd1wAAAAm/airallia-cat-chan.webp",  // 1 confused
-    "https://media.tenor.com/IjkcwEaDOZMAAAAm/please-please-don%27t-go.webp",             // 2 pleading
-    "https://media.tenor.com/g1_tS_VU14YAAAAM/tears-heartbreak.gif",             // 3 sad
-    "https://media.tenor.com/I5bwJxpmFAsAAAAm/crying-sad.webp",       // 4 sadder
-    "https://media1.tenor.com/m/99sQqbsDt1kAAAAd/sad.gif",             // 5 devastated
-    "https://media.tenor.com/RowKT44Zuf0AAAAj/ngoclan.gif",               // 6 very devastated
-    "https://media.tenor.com/U-xx4Pe0V1wAAAAj/budu.gif"  // 7 crying runaway
+    "https://media.tenor.com/SFy5Za0DyMEAAAAj/erm-fingers.gif",                // 0 normal
+    "https://media.tenor.com/OlpOTuNjd1wAAAAm/airallia-cat-chan.webp",          // 1 confused
+    "https://media.tenor.com/IjkcwEaDOZMAAAAm/please-please-don%27t-go.webp",   // 2 pleading
+    "https://media.tenor.com/g1_tS_VU14YAAAAM/tears-heartbreak.gif",            // 3 sad
+    "https://media.tenor.com/I5bwJxpmFAsAAAAm/crying-sad.webp",                // 4 sadder
+    "https://media1.tenor.com/m/99sQqbsDt1kAAAAd/sad.gif",                     // 5 devastated
+    "https://media.tenor.com/RowKT44Zuf0AAAAj/ngoclan.gif",                   // 6 very devastated
+    "https://media.tenor.com/U-xx4Pe0V1wAAAAj/budu.gif"                      // 7 crying runaway
 ]
 
 const noMessages = [
