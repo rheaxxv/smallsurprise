@@ -12,9 +12,9 @@ const gifStages = [
 const noMessages = [
     "No",
     "Sure ka na? 🤔",
-    "Pookie please... 🥺",
+    "Sige na please... 🥺",
     "If you say no, I'll be sad...",
-    "I will be very sad talga... 😢",
+    "Sakit namann... 😢",
     "Plisss??? 💔",
     "Grabeeee...",
     "Last chance naa! 😭",
@@ -24,7 +24,7 @@ const noMessages = [
 const yesTeasePokes = [
     "pahard to get ka naman.. 😏",
     "go on, hit no... once lang 👀",
-    "you're missing out 😈",
+    "type moko noh 😈",
     "click no, I dare youuu 😏"
 ]
 
