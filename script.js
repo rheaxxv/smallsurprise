@@ -139,6 +139,7 @@ function swapGif(src) {
 
 function enableRunaway() {
     noBtn.addEventListener('mouseover', runAway)
+    runAway()
 }
 
 function runAway() {
